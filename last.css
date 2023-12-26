@@ -1,0 +1,296 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  color: white;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+h1 {
+  font-weight: bold;
+  font-size: 4rem;
+}
+/* -------------------main화면 */
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.main-title {
+  font-size: 6rem;
+  opacity: 0;
+  transition: opacity 3s ease;
+  font-weight: bold;
+  margin-bottom: 100px;
+}
+.logo {
+  opacity: 0;
+  transition: opacity 3s ease;
+  max-width: 700px;
+  height: auto;
+  width: 100vw;
+}
+
+header img {
+  width: 80vw;
+  height: auto;
+}
+
+/* ---------------------------nav bar */
+#nav-bar {
+  position: fixed;
+  top: -60px;
+  transition: top 0.5s;
+  z-index: 1;
+}
+#menuicon {
+  display: none;
+  z-index: 1;
+}
+#menuicon + label {
+  display: block;
+  width: 30px;
+  height: 20px;
+  position: relative;
+  cursor: pointer;
+  margin: 20px 10px;
+  z-index: 1;
+}
+#menuicon + label span {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  border-radius: 30px;
+  background: #fff;
+  transition: all 0.35s;
+  z-index: 1;
+}
+#menuicon + label span:nth-child(1) {
+  top: 0;
+}
+#menuicon + label span:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+#menuicon + label span:nth-child(3) {
+  bottom: 0;
+}
+#menuicon:checked + label {
+  z-index: 2;
+}
+#menuicon:checked + label span {
+  background: #fff;
+}
+#menuicon:checked + label span:nth-child(1) {
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+#menuicon:checked + label span:nth-child(2) {
+  opacity: 0;
+}
+#menuicon:checked + label span:nth-child(3) {
+  bottom: 50%;
+  transform: translateY(50%) rotate(-45deg);
+}
+.sidebar {
+  width: 300px;
+  height: 100%;
+  background: black;
+  position: fixed;
+  top: 60px;
+  left: -300px;
+  transition: all 0.35s;
+  opacity: 0.8;
+}
+#menuicon:checked + label + div {
+  left: 0;
+}
+
+.sidebar ul li {
+  color: white;
+  font-weight: bold;
+  opacity: 1;
+  z-index: 9999999;
+  margin: 10px 0 15px 10px;
+}
+/* ----------------------코코 샤넬intro part */
+#main {
+  max-width: 100%;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.intro-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-height: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+.main-imgbox {
+  width: 50%;
+  height: 600px;
+  box-sizing: border-box;
+  overflow: hidden; /* 내부 컨텐츠가 넘칠 경우 가림 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-imgbox img {
+  width: 50%;
+  height: 80%;
+  margin: 5px;
+}
+.text-box {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  box-sizing: border-box;
+}
+.hidden-text {
+  display: none;
+  font-size: 1rem;
+}
+.hidden-button {
+  background-color: black;
+  border: none;
+  padding: 10px;
+  text-align: center;
+}
+.hidden-button i {
+  font-size: 2em; /* 아이콘 크기를 조절 (선택적으로 조절 가능) */
+  vertical-align: middle;
+  cursor: pointer;
+}
+/* ---------------2024 S/S 영상---------------------------------------- */
+#main2,
+#main3,
+#main4,
+#main5 {
+  margin: 100px 0px;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+#main2 > a > video {
+  max-width: 800px;
+  width: 90vw;
+}
+
+/* --------------main3 */
+#main3 img,
+#main3 video {
+  max-width: 1200px;
+  width: 95vw;
+  max-height: 900px;
+  height: 85vh;
+  cursor: pointer;
+}
+/* ----------------------앰배서더 */
+.Ambassador-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 100px 0;
+}
+.Ambassador-img img {
+  width: 90%;
+}
+
+.Ambassador-text{
+  width: 45vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Ambassador-text a {
+  display: block;
+  width: 130px; /* 링크의 너비를 원하는 크기로 조절하세요 */
+  margin: 10px auto; /* 가운데 정렬을 위해 margin을 auto로 설정합니다 */
+  text-align: center; /* 텍스트를 가운데 정렬합니다 */
+  padding: 10px; /* 원하는 패딩을 추가하세요 */
+  background-color: #fff; /* 배경색을 설정하세요 */
+  color: #000; /* 텍스트 색상을 설정하세요 */
+  text-decoration: none; /* 링크의 밑줄을 제거합니다 */
+  border-radius: 5px; /* 원하는 모양을 위해 border-radius를 설정하세요 */
+}
+/* -----------main5 */
+#main5 {
+  height: 100%;
+}
+
+#main5 h1 {
+  margin: 100px 0 0 0;
+}
+.main5-box {
+  /* background-color: #bbb; */
+  display: flex;
+  max-width: 100vw;
+  padding: 10px;
+  margin: 50px 0;
+}
+#main5 img {
+  cursor: pointer;
+  width: 100%;
+  height: 50vh;
+}
+.left-box {
+  /* background-color: #333; */
+  width: 50%;
+}
+.right-text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+/* -----------------footer */
+footer {
+  background-color: #111;
+  text-align: center;
+  font-size: 0.8rem;
+}
+.bottom-text {
+  text-align: center;
+  padding: 5px;
+}
+footer h2 {
+  margin: 20px 0px;
+}
