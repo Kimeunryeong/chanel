@@ -195,7 +195,7 @@ header img {
 #main3,
 #main4,
 #main5 {
-  margin: 50px 0px;
+  margin: 150px 0px;
   width: 100%;
   padding: 10px;
   box-sizing: border-box;
@@ -214,67 +214,66 @@ header img {
   width: 90vw;
 }
 
-
-
 /* ----------------------앰배서더, 부띠끄 */
-.Ambassador-img, .boutique-img {
+.Ambassador-img,
+.boutique-img {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin: 100px 0;
+  margin: 95px 0;
 }
-.Ambassador-img img, .boutique-img img{
+.Ambassador-img img,
+.boutique-img img {
   width: 85%;
 }
 
-.Ambassador-text{
+.Ambassador-text {
   width: 50vw;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .Ambassador-text a {
   display: block;
-  width: 130px; /* 링크의 너비를 원하는 크기로 조절하세요 */
-  margin: 10px auto; /* 가운데 정렬을 위해 margin을 auto로 설정합니다 */
-  text-align: center; /* 텍스트를 가운데 정렬합니다 */
-  padding: 10px; /* 원하는 패딩을 추가하세요 */
-  background-color: #fff; /* 배경색을 설정하세요 */
-  color: #000; /* 텍스트 색상을 설정하세요 */
-  text-decoration: none; /* 링크의 밑줄을 제거합니다 */
-  border-radius: 5px; /* 원하는 모양을 위해 border-radius를 설정하세요 */
+  width: 130px;
+  margin: 30px auto;
+  text-align: center;
+  padding: 10px;
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+  border-radius: 5px;
 }
 /* -----------main5 */
 #main5 {
-  height: 100%;
+  height: auto;
 }
-
 #main5 h1 {
   margin: 100px 0 0 0;
 }
 .main5-box {
-  /* background-color: #bbb; */
   display: flex;
   max-width: 100vw;
+  width: 1100px;
   padding: 10px;
   margin: 50px 0;
 }
+
+.main5-img {
+  width: 55%;
+}
 #main5 img {
-  cursor: pointer;
-  width: 100%;
-  height: 50vh;
+  width: 500px;
+  height: 500px;
 }
-.left-box {
-  /* background-color: #333; */
-  width: 50%;
-}
-.right-text {
-  width: 50%;
+.main5-text {
+  width: 45%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+
   padding: 10px;
 }
 
