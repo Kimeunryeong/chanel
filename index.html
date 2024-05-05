@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CHANEL</title>
+    <title>Coco CHANEL</title>
     <!-- 부트스트랩 -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
@@ -11,11 +11,12 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
-    <link href="last.css" rel="stylesheet" type="text/css" />
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+    <link href="css/nav.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <!-- 네브 -->
-    <nav id="nav-bar">
+    <!-- 헤더 -->
+    <header id="nav-bar">
       <input type="checkbox" id="menuicon" />
       <!-- 햄버거바 구성 -->
       <label for="menuicon">
@@ -27,10 +28,10 @@
       <div class="sidebar">
         <ul>
           <li><a href="#main"> ABOUT COCO</a></li>
-          <li><a href="#main2">2024 FASHION SHOW</a></li>
-          <li><a href="#main4">GLOVER AMBASSADOR</a></li>
-          <li><a href="#main3">BOUTIQUE</a></li>
-          <li><a href="#main5">COSMETICS & PERFUME</a></li>
+          <li><a href="#main2">The beginning of CHANEL</a></li>
+          <li><a href="#main4">CHANEL STYLE</a></li>
+          <li><a href="#main3">Today's CHANEL</a></li>
+          <li><a href="#main5">FIND BOUTIQUE</a></li>
           <li><hr /></li>
           <li style="display: flex; justify-content: space-around">
             <a
@@ -57,184 +58,157 @@
           </li>
         </ul>
       </div>
-    </nav>
-    <header>
-      <img src="image/logo.png" class="logo" id="chanelLogo" />
-      <h1 class="main-title" id="mainTitle">CHANEL</h1>
     </header>
 
-    <!-- 컨텐츠 -->
-    <section>
-      <!-- 가브리엘라 소개 -->
-      <article id="main">
-        <h1>Gabrielle Bonheur Chanel</h1>
-        <div class="intro-box">
-          <div class="main-imgbox">
-            <img src="image/coco.jpg" alt="" />
-            <img src="image/coco2.jpg" alt="" />
-          </div>
-          <!-- 텍스트 -->
-          <div class="text-box">
-            전 세계적으로 사랑받는 샤넬(CHANEL)은 프랑스의 한 여성,
-            <span>가브리엘라 보뇌르 샤넬로부터 시작되었습니다.</span>
-            <!-- 숨김버튼 안의 내용 -->
-            <div class="hidden-text">
-              <br /><br />그녀는 프랑스의 패션 디자이너로 20세기 초기 여성복을
-              남성적이고 편안한 디자인을 도입하는 디자인과 스타일을 선보였으며
-              당시의 전통적이고 고풍적인 여성복을 탈피하는 혁신을 가져왔습니다.
-              <br /><br />샤넬의 아이코닉한 디자인은 그녀 자신의 취향과 철학을
-              담아 심플하면서도 우아하며, 현대적인 미와 전통적인 미를 어우러지게
-              표현하였으며 여성들에게 자유롭고 실용적인 스타일을 제공해
-              오늘날까지도 전 세계적으로 사랑받고 있습니다.
-            </div>
-            <button class="hidden-button">
-              <i
-                class="fa-solid fa-chevron-down fa-lg"
-                style="color: #ffffff"
-              ></i>
-            </button>
-          </div>
-        </div>
-      </article>
-      <!-- 2024패션쇼 -->
-      <article id="main2">
+    <!-- 메인페이지 -->
+    <div class="main-page">
+      <img src="image/logo.png" class="logo" id="chanelLogo" alt="샤넬 로고" />
+      <h1 class="main-title" id="mainTitle">CHANEL</h1>
+      <!-- 출처 나무위키 -->
+    </div>
+
+    <div class="content">
+      <!-- about chanel -->
+      <div id="aboutChanel">
         <h1>
-          2024 S/S
-          <p>FASHION SHOW</p>
+          Gabrielle Bonheur <br />
+          Chanel
         </h1>
-
-        <a
-          href="https://www.chanel.com/kr/fashion/collection/spring-summer-2024/"
-          ><video
-            src="image/새로운 프로젝트 (online-video-cutter.com).mp4"
-            autoplay
-            muted
-          ></video
-        ></a>
-        <div class="text-box">
-          샤넬의 2024 봄-여름 레디-투-웨어쇼는 햇빛을 표현하였습니다.
-          <!-- 숨김버튼 안의 내용 -->
-          <div class="hidden-text">
-            <br /><br />아티스틱 디렉터, 버지니 비아르가 지휘한 CHANEL 2024
-            봄-여름 레디-투-웨어 컬렉션은 프랑스 남부의 빌라 노아유에 깃든
-            특유의 예술적 정신과 활력에서 영감을 얻었습니다.
-            <br /><br />트위드와 플로럴 자수가 어우러진 컬렉션 실루엣은 빌라
-            노아유의 계단식 정원과 아방가르드 건축물의 유려한 라인을 연상시키며,
-            곳곳에 번진 밝은 컬러, 대비 감, 비대칭 구조로 완성됩니다. 여유롭고
-            세련된 실루엣이 중심을 이루는 이번 컬렉션은 고유한 시각으로 무심한
-            멋과 우아함을 연출합니다.
+        <div class="intro-box">
+          <div class="img-box">
+            <img src="image/cocochanel3.webp" alt="코코샤넬의 젊은 시절" />
+            <!-- 출처 나무위키 -->
           </div>
-          <button class="hidden-button">
-            <i
-              class="fa-solid fa-chevron-down fa-xl"
-              style="color: #ffffff"
-            ></i>
-          </button>
-        </div>
-      </article>
-      <!-- GlobalAmbassador -->
-      <article id="main4">
-        <h1>Glover Ambassador</h1>
-        <div class="Ambassador-img">
-          <div class="jenny-img">
-            <img src="image/jenny (2).jpg" />
-          </div>
-          <div class="lily-rose">
-            <img src="image/Lily rose.webp" />
-          </div>
-          <div class="whitney">
-            <img src="image/whitney.webp" />
-          </div>
-          <div class="margaret">
-            <img src="image/Margaret .jpg" />
-          </div>
-        </div>
-        <div class="Ambassador-text">
-          샤넬 앰배서더 휘트니 피크, 마가렛 퀄리, 릴리-로즈 뎁과 제니가 번화한
-          도시, 광활한 대자연, 그리고 몽환적인 저택에서 자전적 이야기를
-          전합니다. 상상력이라는 잉크로 써 내려간 일기장처럼 각자의 일상을
-          조명하지만, 그것은 나아가 우리의 일상에 대한 이야기이기도 합니다.
-          그녀들의 곁을 장식하는 것은 CHANEL 22 백입니다. 포토그래퍼 듀오 이네즈
-          & 비누드는 네 여성의 나날을 관찰하며 네 편의 영상에 담아냈습니다.
-          <a href="https://www.chanel.com/kr/fashion/collection/chanel-22/"
-            >더 알아보기</a
-          >
-        </div>
-      </article>
-      <!-- 2024Preview -->
-      <article id="main3">
-        <h1>2024 PREVIEW</h1>
-        <div class="preimg-box">
-          <div>
-            <img src="image/boutique.4.jpg" />
-          </div>
-          <div>
-            <img src="image/boutique5.jpg" />
-          </div>
-          <div>
-            <img src="image/boutique6.jpg" />
-          </div>
-          <div>
-            <img src="image/boutique2.jpg" />
-          </div>
-        </div>
-        <div class="Ambassador-text">
-          프랑스 남부의 빌라 노아유의 특유의 예술적 정신과 활력이 깃든 2024
-          CHANEL S/S 제품은<br />
-          전국 샤넬 부띠끄에서 만나보실 수 있습니다.<br />
-          여유롭고 세련된 실루엣이 중심을 이루는 이번 컬렉션은 고유한 시각으로
-          무심한 멋과 우아함을 연출합니다.
-          <a
-            href="https://www.chanel.com/kr/fashion/spring-summer-2024/l/FshCollection24S/the-looks/"
-            >더 알아보기</a
-          >
-        </div>
-      </article>
-      <article id="main5">
-        <h1>COSMETICS</h1>
-        <div class="main5-box">
-          <div class="main5-img">
-            <img src="image/Cosmetics.jpg" />
-          </div>
-          <div class="main5-text">
-            <span class="subtitle">Happy Holiday and Happy new year</span
-            ><br /><br />
+          <div class="text-box">
             <p>
-              샤넬 메이크업 크리에이션 스튜디오는
-              <br />
-              풍성한 아르데코 스타일과 호화로웠던 광란의 1920년대에서<br />
-              영감을 받은 2023 홀리데이 컬렉션을 선보입니다.<br />
-              이번 홀리데이 시즌을 더욱 아름답게 만들어 보세요.
+              전 세계적으로 사랑받는 샤넬(CHANEL)은 프랑스 한 여성,<br />
+              가브리엘라 보뇌르 샤넬로부터 시작되었습니다.
             </p>
-
-            <a href="https://www.chanel.com/kr/makeup/">구매하기</a>
+            <div class="text-con">
+              <p>
+                1883년 8월 19일 프랑스 작은 마을에서 태어난 샤넬은 12세부터
+                보육원과 수도원을 전전하면서 불우한 어린시절을 보냈습니다.
+              </p>
+              <p>
+                수도원의 생활을 참다못해 도망쳐 도시로 올라간 샤넬은 고아원에서
+                '코코'라는 애칭으로 바느질하는 노동을 하다 당시 그녀를 후원한 한
+                장교에 의해 예능계에 재능을 각성하게 되었습니다.
+              </p>
+            </div>
           </div>
         </div>
-        <h1>PERFUME</h1>
-        <div class="main5-box">
-          <div class="main5-text">
-            <span class="subtitle">GIVE WONDER, GIVE CHANEL</span>
-            <br /><br />
-            <p>
-              심플한 디자인이 돋보이는 전설적인 향수 N°5 빠르펭.
-              <br />시간을 초월하여 사랑받는 아이콘으로 <br />여성의 진정한
-              아름다움을 표현합니다. <br />알데하이드 플로랄 부케는<br />
-              "여성의 향기를 담은 여성미의 진수"를 만들어 달라고 부탁한<br />가브리엘
-              샤넬의 요청으로 탄생했습니다. <br />5가지 향수로 재해석한 샤넬
-              N°5를 만나보세요.
-            </p>
-            <a href="https://www.chanel.com/kr/fragrance/">구매하기</a>
+      </div>
+      <!-- startChanel -->
+      <div id="startChanel">
+        <h1>The beginning of CHANEL</h1>
+        <div class="intro-box">
+          <div class="img-box">
+            <img src="image/cocochanel1.webp" alt="코코샤넬" />
+            <!-- 출처 위키백과 -->
           </div>
-          <div class="main5-img">
-            <img src="image/Perfume.jpg" />
+          <div class="text-box">
+            <p>현대 여성복의 시초</p>
+            <div class="text-con">
+              <p>
+                사교계 여성들의 불편한 복장에 대해 고민하던 샤넬은 1909년에 모자
+                디자인에서 영감을 받아 마르젤브 거리에 모자가게를 개업했습니다.
+                이 모자가게는 샤넬이 본격적인 디자이너로서의 경력을 시작한
+                곳이었고, 빠르게 성공을 거두었습니다. 1910년에는 캉봉 거리에
+                '샤넬 모드'라는 모자 전문점을 개업하면서 더욱 큰 성공을
+                이루었습니다.
+              </p>
+              <p>
+                모자 사업의 성공을 토대로 여성들의 불편한 옷차림에서 변화를
+                가져오기 시작했습니다. 그녀는 코르셋을 없애고 편안하면서도
+                우아한 여성복을 제안하며 많은 여성들로부터 찬사를 받았습니다.
+                이를 통해 샤넬은 현대 여성복의 시초라는 역사적인 위치를 확고히
+                하였습니다.
+              </p>
+            </div>
           </div>
         </div>
-      </article>
-    </section>
+      </div>
+      <!-- chanel style -->
+      <div id="style">
+        <h1>CHANEL STYLE</h1>
+        <div class="intro-box">
+          <div class="img-box">
+            <img
+              src="image/cocochanel2.webp"
+              alt="코코샤넬의 셋업을 입은 모습"
+            />
+            <!-- 출처 나무위키 -->
+          </div>
+          <div class="text-box">
+            <p>샤넬의 고급스러우면서도 현대적인 스타일</p>
+            <div class="text-con">
+              <p>
+                샤넬은 남성용 정장의 간결하고 스포티한 디자인을 여성복에
+                적용하여 현대적인 스타일을 선보였습니다. 화려하고 과장된 장식을
+                배제하고 깔끔한 라인과 작고 큰 크리스털 액세서리를 통해
+                고급스러움을 표현했습니다.
+              </p>
+              <p>
+                샤넬의 스타일은 편안함과 활동적인 요소를 강조하면서도 여성의
+                우아함과 아름다움을 동시에 잘 표현합니다. 이러한 독특한 샤넬의
+                스타일은 많은 여성들에게 사랑받고, 오늘날에도 패션계에서
+                영향력을 유지하고 있습니다.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- today's chanel -->
+      <div id="todayChanel">
+        <h1>Today's CHANEL</h1>
+        <div class="intro-box">
+          <div class="img-box">
+            <img src="image/jenny.jpg" alt="오늘날 샤넬을 나타내는 뮤즈 제니"/>
+            <!-- 출처 샤넬 공식홈페이지 -->
+          </div>
+          <div class="text-box">
+            <p>오늘날의 샤넬</p>
+            <div class="text-con">
+              <p>
+                샤넬은 전 세계적으로 고급스러우면서도 현대적인 여성복과
+                액세서리, 세련된 향수, 우아하고 아름다운 쥬얼리, 그리고 고품질의
+                코스메틱 제품으로 유명합니다. 샤넬의 디자인은 클래식한 요소와
+                혁신적인 디자인을 조화롭게 섞어 트렌디하고 우아한 룩을 제공하며,
+                여성들에게 자신감과 아름다움을 부여합니다.
+              </p>
+              <p>
+                특히, 샤넬의 향수는 세련되고 품격 있는 향기로 여성들에게
+                사랑받고 있으며, 샤넬의 아이코닉한 핸드백과 액세서리는 패션
+                열정가들에게 인기있는 상징으로 자리잡고 있습니다. 이러한
+                제품들은 샤넬의 역사와 전통을 잘 이어받으면서도 현대적인 감각을
+                섬세하게 표현하고 있습니다.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="boutique">
+        <h1>FIND BOUTIQUE</h1>
+        <div class="intro-box">
+          <div class="img-box">
+            <img src="image/findchanel.svg" alt="샤넬 매장을 귀엽게 나타낸 이미지"/>
+            <!-- 출처 프리픽 -->
+          </div>
+          <div class="text-box">
+            <p>샤넬 부티크를 찾아보세요.</p>
+            <div class="text-con">
+              <p>가까운 곳에서 샤넬을 만나보세요!</p>
+              <p>샤넬의 특별한 경험을 여러분들에게 선사해드립니다.</p>
+              <a class="officialLink" href="https://www.chanel.com/kr/">샤넬 홈페이지</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- 푸터 -->
     <footer>
       <div class="footer-box">
-        <div>
+        
           <ul>
             <li>
               <a href="https://www.chanel.com/kr/">CHANEL.COM 살펴보기</a>
@@ -246,7 +220,7 @@
             </li>
             <li>온라인 서비스</li>
           </ul>
-        </div>
+        
         <div class="footer-q">
           <ul>
             <li>패션&워치화인 주얼리 : 080-805-9628</li>
@@ -275,6 +249,6 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
-    <script src="last.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
