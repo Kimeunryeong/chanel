@@ -114,7 +114,7 @@ footer {
   justify-content: space-around;
   margin: 0 auto;
   display: flex;
-  width: 1440px;
+  max-width: 1440px;
 }
 .footer-box > div {
   display: flex;
